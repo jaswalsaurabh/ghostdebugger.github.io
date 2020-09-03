@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+.nav-list {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-list li {
+  font-size: 24px;
+  list-style: none;
+  margin: 23px 34px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-list li a:hover {
+  color: green;
+}
+.logo img {
+  display: flex;
+  padding: 4px;
+  border: 2px solid black;
+  height: 80px;
+  border-radius: 50px;
+}
+.rightNav {
+  /* background-color: greenyellow; */
+  text-align: right;
+  width: 30%;
+  float: right;
+  padding: 0px 20 px;
+}
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+.background {
+  background: rgba(0, 0, 0, 0.7)
+    url("reuben-teo-fUZWpaUknyI-unsplash\ \(1\).jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.firstSection {
+  height: 100vh;
+}
+.box-main {
+  padding: 12px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 50%;
+  margin: auto;
+  height: 70%;
+}
+.firstHalf {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-big {
+  font-size: 38px;
+}
+.secondHalf {
+  width: 30%;
+}
+.secondHalf img {
+  height: 200px;
+  border: 2px solid grey;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+}
+.btn {
+  margin-right: 8px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  margin-top: 11px;
+}
+.btn-sm {
+  padding: 4px 10px;
+}
+.btn-dark {
+  color: black;
+  border: 2px solid black;
+  display: block;
+  padding: 7px 13px;
+  margin: auto;
+}
+.section {
+  /* height: 400px; */
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 80%;
+  margin: 20px auto;
+}
+.section-left {
+  flex-direction: row-reverse;
+}
+.imgFluid {
+  height: 220px;
+  border-radius: 9px;
+  margin-top: 10px;
+}
+.paras {
+  padding: 0px 64px;
+}
+.sectionTag {
+  padding: 14px 0px;
+}
+.sectionSubTag {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact {
+  background-color: lightpink;
+  height: 550px;
+}
+.text-center {
+  text-align: center;
+}
+h2 {
+  padding-top: 10px;
+  font-size: 2.3rem;
+}
+.form {
+  max-width: 62%;
+  margin: auto;
+}
+.form-input {
+  width: 98%;
+  padding: 6px 8px;
+  margin: 10px 0px;
+  font-size: 16px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer {
+  height: 60px;
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+}
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 5px;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .nav-list {
+    flex-direction: column;
+  }
+  .navbar {
+    flex-direction: column;
+    height: 480px;
+    transition: all 0.3s ease-out;
+  }
+  .box-main {
+    height: 93%;
+  }
+  .box-main {
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+  .secondHalf img {
+    height: 170px;
+    margin-bottom: 10px;
+  }
+  .section {
+    flex-direction: column-reverse;
+    max-width: 600px;
+  }
+
+  .rightNav {
+    text-align: center;
+  }
+  #search {
+    width: 80%;
+  }
+  .btn {
+    font-size: 11px;
+  }
+  .btn-sm {
+    margin-bottom: 10px;
+  }
+  .burger {
+    display: block;
+  }
+  .h-nav-resp {
+    height: 72px;
+  }
+  .v-class-resp {
+    opacity: 0;
+  }
+  .text-big {
+    text-align: center;
+    font-size: 27px;
+  }
+  .text-small {
+    text-align: center;
+    font-size: 17px;
+  }
+  .buttons {
+    text-align: center;
+  }
+  .imgFluid {
+    height: 177px;
+    border-radius: 9px;
+    margin-top: 10px;
+}
+  h2 {
+    font-size: 24px;
+  }
+  .form-input {
+    margin: 7px 0px;
+    padding: 3px;
+    font-size: 12px;
+  }
+  .btn-dark {
+    padding: 5px 8px;
+  }
+  footer{
+    text-align: center;
+  }
+  #search{
+    font-size: 13px;
+    padding: 3px;
+    width: 80%;
+
+  }
+  .nav-list li{
+    font-size: 18px;
+    margin: 12px;
+  }
+}
+@media only screen and (max-width: 1100px){
+  .secondHalf img {
+    height: 100px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.contact {
+  background-color: lightpink;
+  height: 400px;
+}
+}
